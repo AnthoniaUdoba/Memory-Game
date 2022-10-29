@@ -1,6 +1,27 @@
+let deck = document.querySelector(".deck");
+
 /*
  * Create a list that holds all of your cards
  */
+
+let icons = [
+  "fa-diamond",
+  "fa-diamond",
+  "fa-paper-plane-o",
+  "fa-paper-plane-o",
+  "fa-anchor",
+  "fa-anchor",
+  "fa-bolt",
+  "fa-bolt",
+  "fa-cube",
+  "fa-cube",
+  "fa-leaf",
+  "fa-leaf",
+  "fa-bicycle",
+  "fa-bicycle",
+  "fa-bomb",
+  "fa-bomb",
+];
 
 /*
  * Display the cards on the page
@@ -36,3 +57,16 @@ function shuffle(array) {
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
+
+function cardClick(clickedCard) {
+  let handleClick = clickedCard.target;
+  // to make sure that the clicked target is a card &
+  // not an opened/matched card
+  if (
+    handleClick.classList.contains("card") &&
+    !handleClick.classList.contains("open", "show", "match")
+  ) {
+    //add classes open and show to the selected card
+    handleClick.classList.add("open", "show");
+  }
+}
