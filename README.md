@@ -10,10 +10,10 @@ The player flips one card over to reveal its underlying symbol. The player then 
 
 The game ends once all cards have been correctly matched. The star rating is based as follows:
 
-★ ★ ★ Complete with 14 moves or less
+★ ★ ★ Complete with 24 moves or less
 
-★ ★ Complete with less than 18 moves
+★ ★ Complete with less than 32 moves
 
-★ Complete with 22 moves or more
+★ Complete with 31 moves or more
 
 Once all cards are matched, a popup message appears and shows your star ratings, time taken, and how many moves it took to finish the game.
